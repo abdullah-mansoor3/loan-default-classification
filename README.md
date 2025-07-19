@@ -9,4 +9,6 @@
 
 ```
 git clone 'https://github.com/abdullah-mansoor3/loan-default-classification.git'
+cd loan-default-classification
+pip install -r requirements.txt
 ```
