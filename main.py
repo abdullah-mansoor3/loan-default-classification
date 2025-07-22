@@ -33,12 +33,19 @@ if page == "Model Comparison":
     - Recall (class 1): ~0%
     - **Conclusion:** High accuracy overall, but completely fails on the minority class.
 
-    **Decision Tree:**
+    **Decision Tree (Vanilla):**
     - Accuracy: ~65%
     - ROC-AUC: ~0.66
     - Precision (class 1): ~15%
     - Recall (class 1): ~68%
     - **Conclusion:** Decent recall on class 1, but poor precision. Needs better balance.
+
+    **Decision Tree (Hyperparameter Tuned):**
+    - Accuracy: ~64%
+    - ROC-AUC: ~0.66
+    - Precision (class 1): ~14%
+    - Recall (class 1): ~67%
+    - **Conclusion:** No significant improvement from hyperparameter tuning. Slight drop in precision and accuracy; likely due to overfitting or suboptimal grid.
 
     **Balanced Random Forest:**
     - Accuracy: ~78%
@@ -61,6 +68,7 @@ if page == "Model Comparison":
     - Recall (class 1): ~61%
     - **Conclusion:** Strongest performance across both classes. Best generalization.
     """)
+
 
 # --- Page 2: Evaluation Metrics + Tree Visualization ---
 elif page == "Model Evaluation":
