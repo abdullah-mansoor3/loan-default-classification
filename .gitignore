@@ -1,4 +1,5 @@
-data/
+data/application-train.csv
+data/preprocessed-data.csv
 *venv*
 *.vscode
 *__pycache__
